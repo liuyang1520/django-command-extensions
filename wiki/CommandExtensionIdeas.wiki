@@ -1,4 +1,4 @@
-#labels Phase-Requirements
+#labels Phase-Requirements,Featured
 #Here are some ideas for some future command extensions. 
 
 = Ideas for New Command Extensions =
