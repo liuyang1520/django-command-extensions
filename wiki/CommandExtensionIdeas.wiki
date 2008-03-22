@@ -3,7 +3,4 @@
 
 = Ideas for New Command Extensions =
 
-  * ~~Reset Password~~ Thanks Toxic
-  * ~~Create Superuser~~ Thanks Magus
   * create form/manager for App
-  * GraphViz Generator for Models
