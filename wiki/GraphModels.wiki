@@ -1,3 +1,4 @@
+#labels Phase-Implementation,Phase-Deploy
 Creates a *GraphViz* dot file for the specified app names.  You can pass multiple app names and they will all be combined into a single model.  Output is usually directed to a dot file.
 
 With the latest revisions it's also possible to specify an output file if *pygraphviz* is installed and render directly to an image or other supported filetype.
