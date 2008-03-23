@@ -22,7 +22,7 @@ $ ./manage.py graph_models foo bar > my_project.dot
 
 == Example Rendered Graphics ==
 
-The following graphs are from the [https://pycon.coderanger.net/ PyCon-Tech] project.  PyCon-Tech is a conference management framework based on Django framework. 
+The following graphs are from the [https://pycon.coderanger.net/ PyCon-Tech] project.  !PyCon-Tech is a conference management framework based on Django framework. 
 
 === Pycon-Tech Project ===
 [http://ido.nl.eu.org/static/images/pycon_no_grouping.png  http://ido.nl.eu.org/static/images/pycon_no_grouping_small.png]
