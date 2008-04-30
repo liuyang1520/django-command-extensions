@@ -1,0 +1,37 @@
+#summary export the email addresses for your users in one of many formats
+
+Export your users 
+
+
+==Example Usage==
+
+{{{
+# Export all the addresses in the '"First Last" <my@addr.com>;' format.
+$ ./manage.py export_emails > addresses.txt
+}}}
+{{{
+# Export users from the group 'Attendees' in the linked in pre-approve Group csv format.
+$ ./manage.py export_emails -g Attendees -f linkedin pycon08.csv
+}}}
+{{{
+# Create a csv file importable by GMail or Google Docs
+$ ./manage.py export_emails --format=google google.csv
+}}}
+
+==Current Supported Formats==
+
+===address===
+This is the default basic text format. Each entry is on its own line in the format:
+{{{
+"First Last" <user@host.com>;
+}}}
+
+
+===google===
+A CSV (comma separated value) format which google applications can import.
+
+===outlook===
+A CSV (comma separated value) format which outlook can parse and import.
+
+===linkedin===
+A CSV (comma separated value) format which can be imported by [http://www.linkedin.com/static?key=groups_info LinkedIn Groups] to pre-approve a list of people for joining the group.
