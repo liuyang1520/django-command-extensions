@@ -1,0 +1,44 @@
+#summary Installing django-command-extentions
+#labels Featured
+
+= Download and installation =
+
+== Packages ==
+
+Download the latest packaged version from http://code.google.com/p/django-command-extensions/ and unpack it. Inside is a script called setup.py. Enter this command:
+
+{{{
+python setup.py install
+}}}
+
+...and the package will install automatically.
+
+== Version Control (Subversion and Mercurial) ==
+
+Alternatively, source code can be accessed by performing a Subversion checkout or a Mercurial clone. For example, the following command will check the application's source code out to a django-command-extensions directory:
+
+Subversion:
+{{{
+svn checkout http://django-command-extensions.googlecode.com/svn/trunk/ django-command-extensions
+}}}
+Mercurial:
+{{{
+hg clone http://hgsvn.trbs.net/django-command-extensions
+}}}
+_For more information about Mercurial see MercurialGateway wiki page_
+
+Add the resulting folder to your PYTHONPATH or symlink (junction, if you're on Windows) the extensions directory inside it into a directory which is on your PYTHONPATH, such as your Python installation's site-packages directory.
+
+{{{
+ln -sf /full/path/to/django-command-extensions/extensions /usr/lib/python2.5/site-packages/extensions
+}}}
+
+You can verify that the application is available on your PYTHONPATH by opening a Python interpreter and entering the following commands:
+
+{{{
+>>> import extensions
+>>> extensions.VERSION
+(0, 3, 'pre')
+}}}
+
+Keep in mind that the current code in SVN trunk may be different from the packaged release, and may contain bugs and backwards-incompatible changes, as well as new goodies to play with.
