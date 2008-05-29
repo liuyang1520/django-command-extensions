@@ -43,8 +43,5 @@ A CSV (comma separated value) format which can be imported by [http://www.linked
 
 This supplies 3 columns: First name, last name, and e-mail address. This is the best generic csv file for importing into spreadsheets as well.
 
-==Requested Formats==
-
 ===vcard===
 A vCard format which Apple Address Book can parse and import.
-This is enhancement issue [http://code.google.com/p/django-command-extensions/issues/detail?id=6 #6].
