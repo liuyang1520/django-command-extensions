@@ -1,0 +1,30 @@
+#summary RunServerPlus-typical runserver with Werkzeug debugger baked in
+
+= Introduction =
+
+This item requires that you have the [http://werkzeug.pocoo.org/ Werkzeug WSGI utilities] installed.  Included with Werkzeug is a kick ass debugger that renders nice debugging tracebacks and adds an AJAX based debugger (which allows to execute code in the context of the traceback’s frames).  Additionally it provides a nice access view to the source code.
+
+= Getting Started =
+
+To get started we just use the `runserver_plus` command instead of the normal `runserver` command:
+
+{{{
+python manage.py runserver_plus
+
+ * Running on http://127.0.0.1:8000/
+ * Restarting with reloader...
+Validating models...
+0 errors found
+
+Django version 0.97-newforms-admin-SVN-unknown, using settings 'screencasts.settings'
+Development server is running at http://127.0.0.1:8000/
+Using the Werkzeug debugger (http://werkzeug.pocoo.org/)
+Quit the server with CONTROL-C.
+}}}
+
+Note: all normal runserver options apply.  In other words, if you need to change the port number or the host information, you can do so like you would normally.
+
+
+= Using =
+
+Whenever we hit an exception in our code, instead of the normal Django traceback page appearing, we see the Werkzeug traceback page instead.  
