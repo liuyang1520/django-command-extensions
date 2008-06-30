@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This item requires that you have the [http://werkzeug.pocoo.org/ Werkzeug WSGI utilities] installed.  Included with Werkzeug is a kick ass debugger that renders nice debugging tracebacks and adds an AJAX based debugger (which allows to execute code in the context of the traceback’s frames).  Additionally it provides a nice access view to the source code.
+This item requires that you have the [http://werkzeug.pocoo.org/ Werkzeug WSGI utilities]  (version 0.3) installed.  Included with Werkzeug is a kick ass debugger that renders nice debugging tracebacks and adds an AJAX based debugger (which allows to execute code in the context of the traceback’s frames).  Additionally it provides a nice access view to the source code.
 
 = Getting Started =
 
