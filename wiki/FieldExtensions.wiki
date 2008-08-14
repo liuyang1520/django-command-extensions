@@ -1,0 +1,10 @@
+#summary Current Field Extensions
+#labels Featured,Extensions
+
+=Current Database Model Field Extensions=
+
+ * *!CreationDateTimeField* - !DateTimeField that will automatically set it's date when the object is first saved to the database. Works in the same way as the deprecated auto_now_add keyword.
+
+ * *!ModificationDateTimeField* - !DateTimeField that will automatically set it's date when an object is saved to the database. Works in the same way as the deprecated auto_now keyword.
+
+ * *UUIDField* - UUIDField for Django, supports all uuid versions which are natively supported by the uuid python module.
