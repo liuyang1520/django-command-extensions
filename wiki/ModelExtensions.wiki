@@ -1,0 +1,6 @@
+#summary Current Model Extensions
+#labels Featured,extensions
+
+=Current Database Model Extensions=
+
+ * *!TimeStampedModel* - !TimeStampedModel An abstract base class model that provides self-managed "created" and "modified" fields.
