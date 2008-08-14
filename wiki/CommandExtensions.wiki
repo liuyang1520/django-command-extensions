@@ -1,0 +1,47 @@
+#summary Current Command Extensions
+#labels Featured,Extensions
+
+
+=Current Command Extensions=
+
+  * *create_app* - creates an application directory structure for the specified app name.  This command allows you to specify the --template option where you can indicate a template directory structure to use as your default.
+
+  * *create_command* - creates a command extension directory structure within the specified application.  This makes it easy to get started with adding a command extension to your application.
+
+  * *create_jobs* - Creates a Django jobs command directory structure for the given app name in the current directory.  This is part of the impressive jobs system.
+
+  * *create_superuser* - makes it easy to create a superuser for the django.contrib.auth.
+
+  * *describe_form* - used to display a form definition for a model.  Copy and paste the contents into your forms.py and you're ready to go.
+
+  * *dumpscript* - Generates a Python script that will repopulate the database using objects. The advantage of this approach is that it is easy to understand, and more flexible than directly populating the database, or using XML.
+
+  * *[ExportEmails export_emails]* - export the email addresses for your users in one of many formats.  Currently supports Address, Google, Outlook, !LinkedIn, and VCard formats.
+
+  * *generate_secret_key* - creates a new secret key that you can put in your settings.py module.
+
+  * *[GraphModels graph_models]* - creates a [http://www.graphviz.org/ GraphViz] dot file.  You need to send this output to a file yourself.  Great for graphing your models. Pass multiple application names to combine all the models into a single dot file.
+
+  * *passwd* - makes it easy to reset a user's password
+
+  * *print_user_for_session* - print the user information for the provided session key. this is very helpful when trying to track down the person who experienced a site crash.
+
+  * *reset_db* - Resets a database (currently sqlite3, mysql, postgres).
+
+  * *runjob* - run a single maintenance job.  Part of the jobs system.
+
+  * *runjobs* - runs scheduled maintenance jobs. Specify hourly, daily, weekly, monthly.  Part of the jobs system.
+
+  * *runprofileserver* - starts `runserver` with hotshot/profiling tools enabled.  I haven't had a chance to check this one out, but it looks really cool.
+
+  * *runscript* - Runs a script in django context.
+
+  * *[RunServerPlus runserver_plus]* - The standard runserver stuff but with the Werkzeug debugger baked in.  Requires Werkzeug (http://werkzeug.pocoo.org/).  This one kicks ass.
+
+  * *set_fake_passwords* -  Sets all user passwords to a common value (`password` by default). **DEBUG only**
+  
+  * *shell_plus* - An enhanced version of the Django shell.  It will autoload all your models making it easy to work with the ORM right away.
+
+  * *show_urls* - displays the url routes that are defined in your project.  Very crude at this point.
+
+  * *sqldiff* - prints the (approximated) difference between an apps models and what is in the database.  This is very nice, but also very experimental at the moment.  It can not catch everything but it's a great sanity check.
