@@ -15,17 +15,17 @@ python setup.py install
 
 == Installation ==
 
-You will need to add the *extensions* application to the INSTALLED_APPS setting of your Django project `settings.py` file.
+You will need to add the *django_extensions* application to the INSTALLED_APPS setting of your Django project `settings.py` file.
 
 {{{
 INSTALLED_APPS = (
     ...
-    'extensions',
+    'django_extensions',
 )
 }}}
 
 This will make sure that Django finds the additional management commands provided by 
-_django-command-extensions_.
+_django-extensions_.
 
 The next time you invoke `./manage.py help` you should be able to see all the newly available commands.
 
@@ -58,14 +58,14 @@ _For more information about Mercurial see MercurialGateway wiki page_
 You should either install the resulting project with `python setup.py install` or put it the *extensions* directory into your PYTHONPATH. The most common way is to symlink (junction, if you're on Windows) the extensions directory inside a directory which is on your PYTHONPATH, such as your Python installation's site-packages directory.
 
 {{{
-ln -sf /full/path/to/django-command-extensions/extensions /usr/lib/python2.5/site-packages/extensions
+ln -sf /full/path/to/django-command-extensions/django_extensions /usr/lib/python2.5/site-packages/django_extensions
 }}}
 
 You can verify that the application is available on your PYTHONPATH by opening a Python interpreter and entering the following commands:
 
 {{{
->>> import extensions
->>> extensions.VERSION
+>>> import django_extensions
+>>> django_extensions.VERSION
 (0, 2, 'pre')
 }}}
 
