@@ -3,6 +3,7 @@
 Django command that scans all files in your settings.MEDIA_ROOT folder and uploads them to S3 with the same directory structure.
 
 This command can optionally do the following but it is off by default:
+
 * gzip compress any CSS and Javascript files it finds and adds the appropriate 'Content-Encoding' header.
 * set a far future 'Expires' header for optimal caching.
 
