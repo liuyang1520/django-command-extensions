@@ -46,4 +46,4 @@
 
   * *sqldiff* - prints the (approximated) difference between an apps models and what is in the database.  This is very nice, but also very experimental at the moment.  It can not catch everything but it's a great sanity check.
 
-  * *sync_media_s3* - copies files found in settings.MEDIA_ROOT to S3.  Optionally can also gzip CSS and Javascript files and set the Content-Encoding header, and also set a far future expires header for browser caching.
+  * *[sync_media_s3]* - copies files found in settings.MEDIA_ROOT to S3.  Optionally can also gzip CSS and Javascript files and set the Content-Encoding header, and also set a far future expires header for browser caching.
