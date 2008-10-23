@@ -2,7 +2,7 @@
 
 = JobsScheduling =
 
-== Placeholder docs (WIP) ==
+== This page is very much; Work in Progress ==
 
 Creating jobs works much like management commands work in Django.
 Use create_jobs to make a 'jobs' directory inside of an application.
