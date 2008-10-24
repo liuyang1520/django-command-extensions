@@ -27,6 +27,9 @@ Jobs do not run automatically !
 You must either run a job by hand, with which you can specify the exact time on which the command is ran, or put something like the following lines in your crontab file.
 
 @hourly /path/to/my/project/manage.py runjobs hourly
+
 @daily /path/to/my/project/manage.py runjobs daily
+
 @weekly /path/to/my/project/manage.py runjobs weekly
+
 @monthly /path/to/my/project/manage.py runjobs monthly
