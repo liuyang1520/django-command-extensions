@@ -16,9 +16,9 @@ implemented called 'execute', which is called when the job is ran.
 
 The following commands are related to jobs:
 
- - create_jobs, created the directory structure for jobs
- - runjob, runs a single job
- - runjobs, run all hourly/daily/weekly/monthly jobs
+ * create_jobs, created the directory structure for jobs
+ * runjob, runs a single job
+ * runjobs, run all hourly/daily/weekly/monthly jobs
 
 Use "runjob(s) -l" to list all jobs recognized.
 
