@@ -8,19 +8,25 @@ _This document is work in progress. If you feel you can help with better/clearer
 
 *runprofileserver* starts Django's runserver command with hotshot/profiling tools enabled.
 
-It wil save .prof files containing the profiling information into the --prof-path directory.
-Be careful that for each request made, one profile data file is created.
+It will save .prof files containing the profiling information into the --prof-path directory. Note that for each request made one profile data file is saved.
 
-So please use something else then the default --prof-path=/tmp unless you want a really big and messy /tmp directory. (Yes this is probably a bug on windows systems. Where /tmp does not exist)
+Per default the profile-data-files are saved in /tmp use the --prof-path option to specify your own target directory. Saving the data in a meaningful directory structure helps to keep your profile data organized and /tmp uncluttered. (Yes this is probably a bug on windows and other systems where /tmp does not exist)
 
 == gather_profile_stats.py ==
 
 Django comes packed with a tool to aggregate these different prof files into one aggregated profile file. This tool is called _gather_profile_stats.py_ and is located inside the _bin_ directory of your Django distribution.
 
+== --kcachegrind ==
+
+Recent versions of *runprofileserver* have an option to save the profile data into a KCacheGrind compatible format. KCacheGrind is an excellent tool for debugging. 
+
+Here is a screenshot of how KCacheGrind might look when debugging/profiling django:
+[http://trbs.net/media/misc/django-runprofileserver-kcachegrind-full.jpg http://trbs.net/media/misc/django-runprofileserver-kcachegrind-small.jpg]
+
 == Links ==
 
-http://code.djangoproject.com/wiki/ProfilingDjango
-http://www.rkblog.rk.edu.pl/w/p/django-profiling-hotshot-and-kcachegrind/
-http://code.djangoproject.com/browser/django/trunk/django/bin/profiling/gather_profile_stats.py
-http://www.oluyede.org/blog/2007/03/07/profiling-django/
-http://simonwillison.net/2008/May/22/debugging/
+ * http://code.djangoproject.com/wiki/ProfilingDjango
+ * http://www.rkblog.rk.edu.pl/w/p/django-profiling-hotshot-and-kcachegrind/
+ * http://code.djangoproject.com/browser/django/trunk/django/bin/profiling/gather_profile_stats.py
+ * http://www.oluyede.org/blog/2007/03/07/profiling-django/
+ * http://simonwillison.net/2008/May/22/debugging/
