@@ -21,6 +21,7 @@ Django comes packed with a tool to aggregate these different prof files into one
 Recent versions of *runprofileserver* have an option to save the profile data into a KCacheGrind compatible format. KCacheGrind is an excellent tool for debugging. 
 
 Here is a screenshot of how KCacheGrind might look when debugging/profiling django:
+
 [http://trbs.net/media/misc/django-runprofileserver-kcachegrind-full.jpg http://trbs.net/media/misc/django-runprofileserver-kcachegrind-small.jpg]
 
 == Links ==
