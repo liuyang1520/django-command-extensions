@@ -31,7 +31,7 @@ Real databases will probably be bigger and more complicated, and so it is useful
 
 = What it can't do (yet!) =
 
-  * Ideal handling of generic relationships (ie no `AutoField` references: issue 43
+  * Ideal handling of generic relationships (ie no `AutoField` references): issue 43
   * Intermediate join tables: issue 48
   * GIS fields: issue 72
 
