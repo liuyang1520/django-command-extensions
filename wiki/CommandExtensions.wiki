@@ -14,7 +14,7 @@
 
   * *describe_form* - used to display a form definition for a model.  Copy and paste the contents into your forms.py and you're ready to go.
 
-  * *dumpscript* - Generates a Python script that will repopulate the database using objects. The advantage of this approach is that it is easy to understand, and more flexible than directly populating the database, or using XML.
+  * *[Dumpscript dumpscript]* - Generates a Python script that will repopulate the database using objects. The advantage of this approach is that it is easy to understand, and more flexible than directly populating the database, or using XML.
 
   * *[ExportEmails export_emails]* - export the email addresses for your users in one of many formats.  Currently supports Address, Google, Outlook, !LinkedIn, and VCard formats.
 
