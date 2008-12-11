@@ -22,6 +22,8 @@
 
   * *[GraphModels graph_models]* - creates a [http://www.graphviz.org/ GraphViz] dot file.  You need to send this output to a file yourself.  Great for graphing your models. Pass multiple application names to combine all the models into a single dot file.
 
+  * *mail_debug* - starts a mail server which echos out the contents of the email instead of sending it.
+
   * *passwd* - makes it easy to reset a user's password
 
   * *print_user_for_session* - print the user information for the provided session key. this is very helpful when trying to track down the person who experienced a site crash.
